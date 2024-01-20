@@ -1,0 +1,255 @@
+# Project: Projeto1
+# Makefile created by Embarcadero Dev-C++ 6.3
+
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+RES      = ../../../cop2/Projeto1_private.res
+OBJ      = ../../../cop2/actions.o ../../../cop2/ban.o ../../../cop2/baseevents.o ../../../cop2/bed.o ../../../cop2/chat.o ../../../cop2/combat.o ../../../cop2/condition.o ../../../cop2/configmanager.o ../../../cop2/connection.o ../../../cop2/container.o ../../../cop2/creature.o ../../../cop2/creatureevent.o ../../../cop2/cylinder.o ../../../cop2/database.o ../../../cop2/databasemanager.o ../../../cop2/databasetasks.o ../../../cop2/depotchest.o ../../../cop2/depotlocker.o ../../../cop2/events.o ../../../cop2/fileloader.o ../../../cop2/game.o ../../../cop2/globalevent.o ../../../cop2/groups.o ../../../cop2/guild.o ../../../cop2/house.o ../../../cop2/housetile.o ../../../cop2/inbox.o ../../../cop2/ioguild.o ../../../cop2/iologindata.o ../../../cop2/iomap.o ../../../cop2/iomapserialize.o ../../../cop2/item.o ../../../cop2/items.o ../../../cop2/luascript.o ../../../cop2/mailbox.o ../../../cop2/map.o ../../../cop2/monster.o ../../../cop2/monsters.o ../../../cop2/movement.o ../../../cop2/networkmessage.o ../../../cop2/npc.o ../../../cop2/otpch.o ../../../cop2/otserv.o ../../../cop2/outfit.o ../../../cop2/outputmessage.o ../../../cop2/party.o ../../../cop2/player.o ../../../cop2/position.o ../../../cop2/protocol.o ../../../cop2/protocolgame.o ../../../cop2/protocollogin.o ../../../cop2/protocolold.o ../../../cop2/protocolstatus.o ../../../cop2/quests.o ../../../cop2/raids.o ../../../cop2/rsa.o ../../../cop2/scheduler.o ../../../cop2/script.o ../../../cop2/scriptmanager.o ../../../cop2/server.o ../../../cop2/signals.o ../../../cop2/spawn.o ../../../cop2/spells.o ../../../cop2/talkaction.o ../../../cop2/tasks.o ../../../cop2/teleport.o ../../../cop2/thing.o ../../../cop2/tile.o ../../../cop2/tools.o ../../../cop2/trashholder.o ../../../cop2/vocation.o ../../../cop2/waitlist.o ../../../cop2/weapons.o ../../../cop2/wildcardtree.o ../../../cop2/xtea.o $(RES)
+LINKOBJ  = ../../../cop2/actions.o ../../../cop2/ban.o ../../../cop2/baseevents.o ../../../cop2/bed.o ../../../cop2/chat.o ../../../cop2/combat.o ../../../cop2/condition.o ../../../cop2/configmanager.o ../../../cop2/connection.o ../../../cop2/container.o ../../../cop2/creature.o ../../../cop2/creatureevent.o ../../../cop2/cylinder.o ../../../cop2/database.o ../../../cop2/databasemanager.o ../../../cop2/databasetasks.o ../../../cop2/depotchest.o ../../../cop2/depotlocker.o ../../../cop2/events.o ../../../cop2/fileloader.o ../../../cop2/game.o ../../../cop2/globalevent.o ../../../cop2/groups.o ../../../cop2/guild.o ../../../cop2/house.o ../../../cop2/housetile.o ../../../cop2/inbox.o ../../../cop2/ioguild.o ../../../cop2/iologindata.o ../../../cop2/iomap.o ../../../cop2/iomapserialize.o ../../../cop2/item.o ../../../cop2/items.o ../../../cop2/luascript.o ../../../cop2/mailbox.o ../../../cop2/map.o ../../../cop2/monster.o ../../../cop2/monsters.o ../../../cop2/movement.o ../../../cop2/networkmessage.o ../../../cop2/npc.o ../../../cop2/otpch.o ../../../cop2/otserv.o ../../../cop2/outfit.o ../../../cop2/outputmessage.o ../../../cop2/party.o ../../../cop2/player.o ../../../cop2/position.o ../../../cop2/protocol.o ../../../cop2/protocolgame.o ../../../cop2/protocollogin.o ../../../cop2/protocolold.o ../../../cop2/protocolstatus.o ../../../cop2/quests.o ../../../cop2/raids.o ../../../cop2/rsa.o ../../../cop2/scheduler.o ../../../cop2/script.o ../../../cop2/scriptmanager.o ../../../cop2/server.o ../../../cop2/signals.o ../../../cop2/spawn.o ../../../cop2/spells.o ../../../cop2/talkaction.o ../../../cop2/tasks.o ../../../cop2/teleport.o ../../../cop2/thing.o ../../../cop2/tile.o ../../../cop2/tools.o ../../../cop2/trashholder.o ../../../cop2/vocation.o ../../../cop2/waitlist.o ../../../cop2/weapons.o ../../../cop2/wildcardtree.o ../../../cop2/xtea.o $(RES)
+LIBS     = -L"C:/Program Files (x86)/Embarcadero/Dev-Cpp/TDM-GCC-64/lib" -L"C:/Program Files (x86)/Embarcadero/Dev-Cpp/TDM-GCC-64/x86_64-w64-mingw32/lib" -static-libgcc -L"C:/Program Files (x86)/Embarcadero/Dev-Cpp/TDM-GCC-64/x86_64-w64-mingw32/include" -L"C:/Program Files (x86)/Embarcadero/Dev-Cpp/TDM-GCC-64/x86_64-w64-mingw32/lib" -mwindows -lboost_filesystem -lboost_thread -lboost_system -lboost_regex -lsqlite3 -lwsock32 -llua5.1 -lws2_32 -leay32 -lmysql -lxml2 -lgmp -lz -s
+INCS     = -I"C:/Program Files (x86)/Embarcadero/Dev-Cpp/TDM-GCC-64/include" -I"C:/Program Files (x86)/Embarcadero/Dev-Cpp/TDM-GCC-64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Embarcadero/Dev-Cpp/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/9.2.0/include" -I"C:/Program Files (x86)/Embarcadero/Dev-Cpp/TDM-GCC-64/mingw64/include" -I"C:/Program Files (x86)/Embarcadero/Dev-Cpp/TDM-GCC-64/mingw64/lib" -I"C:/Program Files (x86)/Embarcadero/Dev-Cpp/TDM-GCC-64/x86_64-w64-mingw32/bin"
+CXXINCS  = -I"C:/Program Files (x86)/Embarcadero/Dev-Cpp/TDM-GCC-64/include" -I"C:/Program Files (x86)/Embarcadero/Dev-Cpp/TDM-GCC-64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Embarcadero/Dev-Cpp/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/9.2.0/include" -I"C:/Program Files (x86)/Embarcadero/Dev-Cpp/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/9.2.0/include/c++" -I"C:/Program Files (x86)/Embarcadero/Dev-Cpp/TDM-GCC-64/mingw64/include" -I"C:/Program Files (x86)/Embarcadero/Dev-Cpp/TDM-GCC-64/mingw64/lib" -I"C:/Program Files (x86)/Embarcadero/Dev-Cpp/TDM-GCC-64/x86_64-w64-mingw32/bin"
+BIN      = ../../../cop1/Projeto1.exe
+CXXFLAGS = $(CXXINCS) -w -Wall -D__USE_SQLITE__ -D__USE_MYSQL__ -D__CONSOLE__
+CFLAGS   = $(INCS) -w -Wall
+DEL      = C:\Program Files (x86)\Embarcadero\Dev-Cpp\devcpp.exe INTERNAL_DEL
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${DEL} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+../../../cop2/actions.o: ../actions.cpp
+	$(CPP) -c ../actions.cpp -o ../../../cop2/actions.o $(CXXFLAGS)
+
+../../../cop2/ban.o: ../ban.cpp
+	$(CPP) -c ../ban.cpp -o ../../../cop2/ban.o $(CXXFLAGS)
+
+../../../cop2/baseevents.o: ../baseevents.cpp
+	$(CPP) -c ../baseevents.cpp -o ../../../cop2/baseevents.o $(CXXFLAGS)
+
+../../../cop2/bed.o: ../bed.cpp
+	$(CPP) -c ../bed.cpp -o ../../../cop2/bed.o $(CXXFLAGS)
+
+../../../cop2/chat.o: ../chat.cpp
+	$(CPP) -c ../chat.cpp -o ../../../cop2/chat.o $(CXXFLAGS)
+
+../../../cop2/combat.o: ../combat.cpp
+	$(CPP) -c ../combat.cpp -o ../../../cop2/combat.o $(CXXFLAGS)
+
+../../../cop2/condition.o: ../condition.cpp
+	$(CPP) -c ../condition.cpp -o ../../../cop2/condition.o $(CXXFLAGS)
+
+../../../cop2/configmanager.o: ../configmanager.cpp
+	$(CPP) -c ../configmanager.cpp -o ../../../cop2/configmanager.o $(CXXFLAGS)
+
+../../../cop2/connection.o: ../connection.cpp
+	$(CPP) -c ../connection.cpp -o ../../../cop2/connection.o $(CXXFLAGS)
+
+../../../cop2/container.o: ../container.cpp
+	$(CPP) -c ../container.cpp -o ../../../cop2/container.o $(CXXFLAGS)
+
+../../../cop2/creature.o: ../creature.cpp
+	$(CPP) -c ../creature.cpp -o ../../../cop2/creature.o $(CXXFLAGS)
+
+../../../cop2/creatureevent.o: ../creatureevent.cpp
+	$(CPP) -c ../creatureevent.cpp -o ../../../cop2/creatureevent.o $(CXXFLAGS)
+
+../../../cop2/cylinder.o: ../cylinder.cpp
+	$(CPP) -c ../cylinder.cpp -o ../../../cop2/cylinder.o $(CXXFLAGS)
+
+../../../cop2/database.o: ../database.cpp
+	$(CPP) -c ../database.cpp -o ../../../cop2/database.o $(CXXFLAGS)
+
+../../../cop2/databasemanager.o: ../databasemanager.cpp
+	$(CPP) -c ../databasemanager.cpp -o ../../../cop2/databasemanager.o $(CXXFLAGS)
+
+../../../cop2/databasetasks.o: ../databasetasks.cpp
+	$(CPP) -c ../databasetasks.cpp -o ../../../cop2/databasetasks.o $(CXXFLAGS)
+
+../../../cop2/depotchest.o: ../depotchest.cpp
+	$(CPP) -c ../depotchest.cpp -o ../../../cop2/depotchest.o $(CXXFLAGS)
+
+../../../cop2/depotlocker.o: ../depotlocker.cpp
+	$(CPP) -c ../depotlocker.cpp -o ../../../cop2/depotlocker.o $(CXXFLAGS)
+
+../../../cop2/events.o: ../events.cpp
+	$(CPP) -c ../events.cpp -o ../../../cop2/events.o $(CXXFLAGS)
+
+../../../cop2/fileloader.o: ../fileloader.cpp
+	$(CPP) -c ../fileloader.cpp -o ../../../cop2/fileloader.o $(CXXFLAGS)
+
+../../../cop2/game.o: ../game.cpp
+	$(CPP) -c ../game.cpp -o ../../../cop2/game.o $(CXXFLAGS)
+
+../../../cop2/globalevent.o: ../globalevent.cpp
+	$(CPP) -c ../globalevent.cpp -o ../../../cop2/globalevent.o $(CXXFLAGS)
+
+../../../cop2/groups.o: ../groups.cpp
+	$(CPP) -c ../groups.cpp -o ../../../cop2/groups.o $(CXXFLAGS)
+
+../../../cop2/guild.o: ../guild.cpp
+	$(CPP) -c ../guild.cpp -o ../../../cop2/guild.o $(CXXFLAGS)
+
+../../../cop2/house.o: ../house.cpp
+	$(CPP) -c ../house.cpp -o ../../../cop2/house.o $(CXXFLAGS)
+
+../../../cop2/housetile.o: ../housetile.cpp
+	$(CPP) -c ../housetile.cpp -o ../../../cop2/housetile.o $(CXXFLAGS)
+
+../../../cop2/inbox.o: ../inbox.cpp
+	$(CPP) -c ../inbox.cpp -o ../../../cop2/inbox.o $(CXXFLAGS)
+
+../../../cop2/ioguild.o: ../ioguild.cpp
+	$(CPP) -c ../ioguild.cpp -o ../../../cop2/ioguild.o $(CXXFLAGS)
+
+../../../cop2/iologindata.o: ../iologindata.cpp
+	$(CPP) -c ../iologindata.cpp -o ../../../cop2/iologindata.o $(CXXFLAGS)
+
+../../../cop2/iomap.o: ../iomap.cpp
+	$(CPP) -c ../iomap.cpp -o ../../../cop2/iomap.o $(CXXFLAGS)
+
+../../../cop2/iomapserialize.o: ../iomapserialize.cpp
+	$(CPP) -c ../iomapserialize.cpp -o ../../../cop2/iomapserialize.o $(CXXFLAGS)
+
+../../../cop2/item.o: ../item.cpp
+	$(CPP) -c ../item.cpp -o ../../../cop2/item.o $(CXXFLAGS)
+
+../../../cop2/items.o: ../items.cpp
+	$(CPP) -c ../items.cpp -o ../../../cop2/items.o $(CXXFLAGS)
+
+../../../cop2/luascript.o: ../luascript.cpp
+	$(CPP) -c ../luascript.cpp -o ../../../cop2/luascript.o $(CXXFLAGS)
+
+../../../cop2/mailbox.o: ../mailbox.cpp
+	$(CPP) -c ../mailbox.cpp -o ../../../cop2/mailbox.o $(CXXFLAGS)
+
+../../../cop2/map.o: ../map.cpp
+	$(CPP) -c ../map.cpp -o ../../../cop2/map.o $(CXXFLAGS)
+
+../../../cop2/monster.o: ../monster.cpp
+	$(CPP) -c ../monster.cpp -o ../../../cop2/monster.o $(CXXFLAGS)
+
+../../../cop2/monsters.o: ../monsters.cpp
+	$(CPP) -c ../monsters.cpp -o ../../../cop2/monsters.o $(CXXFLAGS)
+
+../../../cop2/movement.o: ../movement.cpp
+	$(CPP) -c ../movement.cpp -o ../../../cop2/movement.o $(CXXFLAGS)
+
+../../../cop2/networkmessage.o: ../networkmessage.cpp
+	$(CPP) -c ../networkmessage.cpp -o ../../../cop2/networkmessage.o $(CXXFLAGS)
+
+../../../cop2/npc.o: ../npc.cpp
+	$(CPP) -c ../npc.cpp -o ../../../cop2/npc.o $(CXXFLAGS)
+
+../../../cop2/otpch.o: ../otpch.cpp
+	$(CPP) -c ../otpch.cpp -o ../../../cop2/otpch.o $(CXXFLAGS)
+
+../../../cop2/otserv.o: ../otserv.cpp
+	$(CPP) -c ../otserv.cpp -o ../../../cop2/otserv.o $(CXXFLAGS)
+
+../../../cop2/outfit.o: ../outfit.cpp
+	$(CPP) -c ../outfit.cpp -o ../../../cop2/outfit.o $(CXXFLAGS)
+
+../../../cop2/outputmessage.o: ../outputmessage.cpp
+	$(CPP) -c ../outputmessage.cpp -o ../../../cop2/outputmessage.o $(CXXFLAGS)
+
+../../../cop2/party.o: ../party.cpp
+	$(CPP) -c ../party.cpp -o ../../../cop2/party.o $(CXXFLAGS)
+
+../../../cop2/player.o: ../player.cpp
+	$(CPP) -c ../player.cpp -o ../../../cop2/player.o $(CXXFLAGS)
+
+../../../cop2/position.o: ../position.cpp
+	$(CPP) -c ../position.cpp -o ../../../cop2/position.o $(CXXFLAGS)
+
+../../../cop2/protocol.o: ../protocol.cpp
+	$(CPP) -c ../protocol.cpp -o ../../../cop2/protocol.o $(CXXFLAGS)
+
+../../../cop2/protocolgame.o: ../protocolgame.cpp
+	$(CPP) -c ../protocolgame.cpp -o ../../../cop2/protocolgame.o $(CXXFLAGS)
+
+../../../cop2/protocollogin.o: ../protocollogin.cpp
+	$(CPP) -c ../protocollogin.cpp -o ../../../cop2/protocollogin.o $(CXXFLAGS)
+
+../../../cop2/protocolold.o: ../protocolold.cpp
+	$(CPP) -c ../protocolold.cpp -o ../../../cop2/protocolold.o $(CXXFLAGS)
+
+../../../cop2/protocolstatus.o: ../protocolstatus.cpp
+	$(CPP) -c ../protocolstatus.cpp -o ../../../cop2/protocolstatus.o $(CXXFLAGS)
+
+../../../cop2/quests.o: ../quests.cpp
+	$(CPP) -c ../quests.cpp -o ../../../cop2/quests.o $(CXXFLAGS)
+
+../../../cop2/raids.o: ../raids.cpp
+	$(CPP) -c ../raids.cpp -o ../../../cop2/raids.o $(CXXFLAGS)
+
+../../../cop2/rsa.o: ../rsa.cpp
+	$(CPP) -c ../rsa.cpp -o ../../../cop2/rsa.o $(CXXFLAGS)
+
+../../../cop2/scheduler.o: ../scheduler.cpp
+	$(CPP) -c ../scheduler.cpp -o ../../../cop2/scheduler.o $(CXXFLAGS)
+
+../../../cop2/script.o: ../script.cpp
+	$(CPP) -c ../script.cpp -o ../../../cop2/script.o $(CXXFLAGS)
+
+../../../cop2/scriptmanager.o: ../scriptmanager.cpp
+	$(CPP) -c ../scriptmanager.cpp -o ../../../cop2/scriptmanager.o $(CXXFLAGS)
+
+../../../cop2/server.o: ../server.cpp
+	$(CPP) -c ../server.cpp -o ../../../cop2/server.o $(CXXFLAGS)
+
+../../../cop2/signals.o: ../signals.cpp
+	$(CPP) -c ../signals.cpp -o ../../../cop2/signals.o $(CXXFLAGS)
+
+../../../cop2/spawn.o: ../spawn.cpp
+	$(CPP) -c ../spawn.cpp -o ../../../cop2/spawn.o $(CXXFLAGS)
+
+../../../cop2/spells.o: ../spells.cpp
+	$(CPP) -c ../spells.cpp -o ../../../cop2/spells.o $(CXXFLAGS)
+
+../../../cop2/talkaction.o: ../talkaction.cpp
+	$(CPP) -c ../talkaction.cpp -o ../../../cop2/talkaction.o $(CXXFLAGS)
+
+../../../cop2/tasks.o: ../tasks.cpp
+	$(CPP) -c ../tasks.cpp -o ../../../cop2/tasks.o $(CXXFLAGS)
+
+../../../cop2/teleport.o: ../teleport.cpp
+	$(CPP) -c ../teleport.cpp -o ../../../cop2/teleport.o $(CXXFLAGS)
+
+../../../cop2/thing.o: ../thing.cpp
+	$(CPP) -c ../thing.cpp -o ../../../cop2/thing.o $(CXXFLAGS)
+
+../../../cop2/tile.o: ../tile.cpp
+	$(CPP) -c ../tile.cpp -o ../../../cop2/tile.o $(CXXFLAGS)
+
+../../../cop2/tools.o: ../tools.cpp
+	$(CPP) -c ../tools.cpp -o ../../../cop2/tools.o $(CXXFLAGS)
+
+../../../cop2/trashholder.o: ../trashholder.cpp
+	$(CPP) -c ../trashholder.cpp -o ../../../cop2/trashholder.o $(CXXFLAGS)
+
+../../../cop2/vocation.o: ../vocation.cpp
+	$(CPP) -c ../vocation.cpp -o ../../../cop2/vocation.o $(CXXFLAGS)
+
+../../../cop2/waitlist.o: ../waitlist.cpp
+	$(CPP) -c ../waitlist.cpp -o ../../../cop2/waitlist.o $(CXXFLAGS)
+
+../../../cop2/weapons.o: ../weapons.cpp
+	$(CPP) -c ../weapons.cpp -o ../../../cop2/weapons.o $(CXXFLAGS)
+
+../../../cop2/wildcardtree.o: ../wildcardtree.cpp
+	$(CPP) -c ../wildcardtree.cpp -o ../../../cop2/wildcardtree.o $(CXXFLAGS)
+
+../../../cop2/xtea.o: ../xtea.cpp
+	$(CPP) -c ../xtea.cpp -o ../../../cop2/xtea.o $(CXXFLAGS)
+
+../../../cop2/Projeto1_private.res: Projeto1_private.rc 
+	$(WINDRES) -i Projeto1_private.rc --input-format=rc -o ../../../cop2/Projeto1_private.res -O coff 
+
